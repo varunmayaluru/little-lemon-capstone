@@ -1,37 +1,44 @@
-import React from 'react';
+import React from "react"
+import small_logo from "../icons_assets/Logo.svg"
 
 const Footer = () => {
-    return (
-        <footer className="footer">
-            <section className="footer-section logo">
-                {/* Placeholder for logo */}
-                <div className="logo-placeholder"></div>
-            </section>
-            <nav className="footer-section">
-                <h4>Doormat Navigation</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#reservations">Reservations</a></li>
-                    <li><a href="#order">Order Online</a></li>
-                    <li><a href="#login">Login</a></li>
-                </ul>
-            </nav>
-            <address className="footer-section">
-                <h4>Contact</h4>
-                <p>Address</p>
-                <p>Phone number</p>
-                <p><a href="mailto:email@example.com">Email</a></p>
-            </address>
-            <section className="footer-section">
-                <h4>Social Media Links</h4>
-                <p>Address</p>
-                <p>Phone number</p>
-                <p><a href="mailto:social@example.com">Email</a></p>
+    return(
+        <footer className="">
+            <section>
+            <div className="company-info">
+                <img src={small_logo} alt=""/>
+                <p>We are a family owned Mediterraneran restaurant, focused on traditional recipes servred with a modern twist.</p>
+            </div>
+            <div>
+                <h3>Important Links</h3>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Menu</a></li>
+                <li><a href="/">Reservations</a></li>
+                <li><a href="/">Order Online</a></li>
+                <li><a href="/">Login</a></li>
+            </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+            <ul>
+            <li>Address: <br/> 123 Town Street, Chicago</li>
+                <li>Phone: <br/> +00 123 456 789</li>
+                <li>Email: <br/> varunm@outlook.in</li>
+            </ul>
+            </div>
+            <div>
+                <h3>Social Media Links</h3>
+            <ul>
+                <li><a href="/">Facebook</a></li>
+                <li><a href="/">Instagram</a></li>
+                <li><a href="/">Twitter</a></li>
+            </ul>
+            </div>
             </section>
         </footer>
-    );
-};
+    )
+}
 
 export default Footer;
